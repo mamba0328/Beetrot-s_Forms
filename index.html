@@ -8,6 +8,61 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <main>
+        <form>
+            <div class="wrapper">
+                <label for="">Повне ім'я</label>
+                <input type="text">
+            </div>
+            <div class="wrapper">
+                <label for="">Email</label>
+                <input type="email">
+            </div>
+            <div class="wrapper">
+                <label for="">Пароль</label>
+                <input type="password">
+            </div>
+            <div class="wrapper">
+                <label for="">Пароль ще раз</label>
+                <input type="password">
+            </div>
+            <div class="radio wrapper">
+                <p>
+                    Стать 
+                    <input type="radio" checked name="gender">
+                    <label>чоловіча</label>
+                    <input type="radio" name="gender">
+                    <label>жіноча</label>
+                </p>
+            </div>
+            <div class="wrapper">
+                <label for="">Вік</label>
+                <input type="text">
+            </div>
+            <div class="wrapper">
+                <label for="">Курс</label>
+                <select>
+                    <option selected disabled>-=Виберіть курс=-</option>
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>Project Management</option>
+                    <option>QA Manual</option>
+                </select>
+            </div>
+            <div class="wrapper">
+                <label for="">Повна адреса</label>
+                <textarea placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+            </div>
+            <div class="checkbox wrapper">
+                <input type="checkbox">
+                <label for="">Я погоджуюсь з обробкою персональних даних</label>
+            </div>
+
+            <div class="buttons wrapper">
+                <button>Очистити форму</button>
+                <button>Зареєструватися</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

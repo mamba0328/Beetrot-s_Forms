@@ -52,7 +52,12 @@ html, body{
     font-size: 0.8rem;
 }
 
-.buttons{ 
+input[type='radio'],
+input[type='checkbox'], button{ 
+    cursor: pointer;
+}
+
+.buttons{
     text-align: center;
 }
 

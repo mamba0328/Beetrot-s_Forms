@@ -12,7 +12,7 @@ html, body{
 .main{ 
     width: 100%;
     text-align: center;
-    padding: 15% 0; /* CHANGE!!!!!! */
+    transform: translate(0, 50%);
 }
 
 .registration-form{

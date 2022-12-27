@@ -8,40 +8,41 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <main>
-        <form>
+    <main class="main">
+        <form class="registration-form">
             <div class="wrapper">
-                <label for="">Повне ім'я</label>
-                <input type="text">
+                <label for="full-name">Повне ім'я</label>
+                <input id='full-name' name='full-name' type="text" required>
             </div>
             <div class="wrapper">
-                <label for="">Email</label>
-                <input type="email">
+                <label for="email">Email</label>
+                <input id='email' type="email" name='email' required>
             </div>
             <div class="wrapper">
-                <label for="">Пароль</label>
-                <input type="password">
+                <label for="password">Пароль</label>
+                <input id='password' type="password" name='password' required>
             </div>
             <div class="wrapper">
-                <label for="">Пароль ще раз</label>
-                <input type="password">
+                <label for="password-repeat">Пароль ще раз</label>
+                <input id='password-repeat' type="password" name='password-repeat' required>
             </div>
             <div class="radio wrapper">
-                <p>
-                    Стать 
+                <label>Стать</label>
+                <span id="age-radios">
                     <input type="radio" checked name="gender">
                     <label>чоловіча</label>
-                    <input type="radio" name="gender">
+                    <input type="radio" name="gender" required>
                     <label>жіноча</label>
-                </p>
+                </span>
             </div>
             <div class="wrapper">
-                <label for="">Вік</label>
-                <input type="text">
+                <label for="age">Вік</label>
+                <input id='age' name='age' type="text" required pattern="[0-9]+"
+                 maxlength="3">
             </div>
             <div class="wrapper">
-                <label for="">Курс</label>
-                <select>
+                <label for="course">Курс</label>
+                <select id='course' name="course" required>
                     <option selected disabled>-=Виберіть курс=-</option>
                     <option>Front-End</option>
                     <option>Back-End</option>
@@ -50,17 +51,17 @@
                 </select>
             </div>
             <div class="wrapper">
-                <label for="">Повна адреса</label>
-                <textarea placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+                <label for="full-adress">Повна адреса</label>
+                <textarea id='full-adress' class="full-adress" name='full-adress' placeholder="Країна, регіон, місто/селище, вулиця" required ></textarea>
             </div>
             <div class="checkbox wrapper">
-                <input type="checkbox">
-                <label for="">Я погоджуюсь з обробкою персональних даних</label>
+                <input id='terms' type="checkbox" class="terms" required>
+                <label for="terms">Я погоджуюсь з обробкою персональних даних</label>
             </div>
 
             <div class="buttons wrapper">
-                <button>Очистити форму</button>
-                <button>Зареєструватися</button>
+                <button class="clear-form" type="reset">Очистити форму</button>
+                <button class="submit" type="submit">Зареєструватися</button>
             </div>
         </form>
     </main>
